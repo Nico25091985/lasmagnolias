@@ -1,0 +1,202 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+overflow: auto;
+}
+
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: "Margareth";
+    src: url(../FONTS/Margadeth.otf);
+}
+
+header{
+    background-color: rgb(192, 173, 131); 
+    top: 0;
+    position: sticky;
+}
+h1{
+    color: blueviolet;
+    font-family: "Margareth", serif;
+    font-size: 50px;
+    padding-left: 25px;
+}
+section.mainsection{
+    width: 100%;
+    height: 450px;
+    background-image:url(../IMAGENES/LOGO_MAIN.jpg);
+    background-position: 0;
+    background-size: cover;  
+}
+.nav_ppal{
+    background-color: blueviolet;
+}
+.nav_ppal ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-item a{
+    color: whitesmoke;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: medium;
+    font-style: oblique;
+    font-weight: 700;
+    display: flex;
+}
+p.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.navbar{
+    font-size: 20px; 
+}
+h2{
+    font-family: "Margareth", serif;
+    color: blueviolet;
+    font-size: 40px;
+    margin: 20px;
+}
+.imgcatalogo{
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;   
+}
+img{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;   
+}
+.dondeestamos{
+    color: blueviolet;
+    font-family: "Margareth", serif;
+    font-size: 40px;
+    margin: 5px; 
+}
+section.mapa{
+    width: 301px;
+    height: 201px;
+    margin-left: 15px;
+    border: 1px solid blueviolet;
+}
+footer ul{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;    
+}
+ul.footer{
+    font-size: 20px; 
+    color: rgb(255, 251, 251);
+    margin: 40px 0 0 0;
+}
+li{
+    display: inline;
+} 
+/* PREGUNTAS FRECUENTES */
+ol{
+    color: aquamarine;
+    background-color: beige;
+    padding: 10px;
+}
+.faqs{
+    color: rgb(255, 0, 242);
+    margin-left: 20px;
+    background-color: beige;
+}
+.iniciofaqs{
+    margin: 20px;
+}
+/* CONTACTO */
+body.contact{
+    background-image: url(../IMAGENES/LOGO_CONTACTO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 15px;
+}
+h1 .contacto{
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.formulario{
+    height: 300px;
+}
+form{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: small;
+}
+.formulario form textarea{
+    resize: vertical;
+}
+/* OUTLET */
+body.outlet{
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center; 
+    background: beige;
+}
+.ofuni, .navofuni, .discontinuo, .navdisc, .pie{
+    padding: 10px;
+    border: 1px solid;
+}
+.imgoutlet{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 300px) 60px; 
+    gap: 10px;
+    grid-template-areas: "ofuni navofuni navofuni" "navdisc navdisc discontinuo" "pie pie pie";
+}
+.ofuni{
+    grid-area: ofuni;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+.navofuni{
+    grid-area: navofuni;
+}
+.discontinuo{
+    grid-area: discontinuo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+.navdisc{
+    grid-area: navdisc;
+    
+}
+.pie{
+    grid-area: pie;
+    text-align: center;
+    font-size: 30px;
+}
+.inicio{
+    padding: 10px;
+}
+
+/* SOBRE NOSOTROS */
+.volver{
+    padding: 50px;
+}
